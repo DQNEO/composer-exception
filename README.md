@@ -1,4 +1,6 @@
-# a Makefile to reproduce the issue https://github.com/composer/composer/issues/4557
+# a Makefile to reproduce a composer issue
+
+https://github.com/composer/composer/issues/4557
 
 `make c557715`
 
