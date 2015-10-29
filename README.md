@@ -29,3 +29,23 @@ install [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--no-p
 
 make: *** [c557715] Error 1
 ```
+
+# workaround
+
+use `files` instead of `classmap`
+
+```
+diff --git a/composer.json b/composer.json
+index 6c53c32..5b0b71b 100644
+--- a/composer.json
++++ b/composer.json
+@@ -3,7 +3,7 @@
+     "predis/predis": "v0.8.5"
+   },
+   "autoload": {
+-    "classmap": [
++    "files": [
+       "vendor/predis/predis/Predis.php"
+     ]
+   },
+```
