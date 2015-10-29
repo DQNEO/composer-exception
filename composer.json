@@ -1,0 +1,15 @@
+{
+  "require": {
+    "predis/predis": "v0.8.5"
+  },
+  "autoload": {
+    "classmap": [
+      "vendor/predis/predis/Predis.php"
+    ]
+  },
+  "scripts": {
+    "pre-autoload-dump": [
+      "cd  vendor/predis/predis; php ./bin/create-single-file -E ../../../exclude.txt"
+    ]
+  }
+}
